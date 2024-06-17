@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin-inline:auto;
+}
+header{
+    height: 6rem;
+    background-color: rgba(24, 21, 21, 0.445);
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul a{
+    color: white;
+    text-decoration: none;
+    font-size:1.5rem ;
+}
+.menu ul a:hover{
+    color: tomato;
+}
+.menu h1{
+    font-size:2rem ;
+}
+em{
+    color: tomato;
+}
+.btn{
+    font-size: 2rem;
+    padding:15px  20px;
+    background-color: tomato;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.hamburger{
+   display:none ;
+}
+.mobile-menu{
+    display: none;
+}
+video{
+    height:100vh ;
+    width: 100% ;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right:0 ;
+    object-fit: cover;
+}
+.hero{
+    height: calc(100vh - 6rem);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    /* align-items: center; */
+    gap:3.5rem ;
+    background-color: rgba(3, 3, 3, 0.644);
+
+}
+.hero-contact {
+    display: flex;
+    flex-direction: column;
+    font-size:1rem ;
+    color: white;
+    text-align: center;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+#hero2{
+    font-size:5rem ;
+    text-transform: uppercase;
+}
+.mobile-menu a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    /* border-bottom:2px solid black ; */
+    font-size:1.rem ;
+}
+.mobile-menu li{
+    list-style: none;
+    border-bottom:2px solid black ;
+}
+.program-gym{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-block:5rem ;
+}
+.info-gym{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    width: 60%;
+    margin-top:4rem ;
+    
+}
+img{
+   width:6rem;
+   height:6rem ;
+}
+.container-info{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 20px;
+
+}
+.gymi{
+    display: flex;
+    flex-direction: column;
+
+}
+.gymi h1{
+color: black;
+}
+.gymi p{
+    color: rgb(102, 101, 101);
+    font-size: 1.3rem;
+}
+
+.btn-gym{
+    
+    background-color:transparent;
+    border:none ;
+    color:tomato ;
+    width: 200px;
+    font-size: 1.3rem;
+}
+.contact-gym{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:10px;
+}
+.contact-gym h1{
+    font-size: 2.5rem;
+    color: black;
+}
+.contact-gym p{
+    color: black;
+}
+.contact-gym img{
+width: 40px;
+height: 20px;
+}
+.gym-learning{
+    width: 100%;
+    background-color: rgb(194, 12, 12);
+    height: 35vh;
+    margin-block: 6rem;
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(rgba(2,2,2,0.1),rgba(2,2,2,0.1)),url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg);
+}
+
+.thing-gym{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    /* margin-top: 100px; */
+    text-align: center;
+    gap: 2rem;
+}
+.thing-gym h1{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.gym-classes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-block:5rem ;
+    /* flex-wrap: wrap; */
+}
+.info-classes{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.training-classes{
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px 25px; */
+    gap:30px;
+    cursor: pointer;
+}
+.training-classes button{
+       background-color: tomato;
+       font-size: 1.7rem;
+       color: white;
+       padding:15px 25px ;
+       border: none;
+       border-radius:5px ;
+}
+
+
+.box{
+    display: flex;
+    flex-direction: row;
+    width:400pxpx ;
+    padding:25px 30px ;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-sizing:5px ;
+    color:black ;
+    font-weight: 400;
+}
+.box:hover{
+    color: tomato;
+}
+
+.box img{
+    width:30px;
+    height: 30px;
+}
+.first-training{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: black;
+}
+.first-training img{
+width: 750px;
+height: 300px;
+border-radius: 5px;
+}
+.first-training button{
+     width:170px ;
+     height:50px ;
+     padding: ;
+     font-size: 1.4rem;
+     background-color: tomato;
+     color: white;
+     border: none;
+     cursor: pointer;
+}
+button:hover{
+    
+}
+.timetable{
+    height: 9ovh;
+    width: 100%;
+    background:linear-gradient(rgba(2,2,2,0.5),rgba(2,2,2,0.5)),url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg) center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    flex-wrap: wrap;
+    margin-block: 6rem;
+    padding-block: 2rem;
+}
+.comba{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    /* justify-content: center; */
+    align-items:center ;
+    /* padding: 20px; */
+
+}
+
+#hello{
+    color: white;
+}
+.gym-days{
+display: flex; */
+justify-content: center;
+align-items: center;
+/* /* flex-wrap: wrap; */
+}
+
+.gym-days ul{
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.gym-days ul li{
+    list-style: none;
+}
+.table{
+    /* display: flex; */
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.table tr{
+    /* width: 100%; */
+    /* height: 100%; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    align-items: center;
+}
+.table td{
+    max-width: 150px;
+    height: 100px;
+    border: 2px solid white;
+    text-align: center;
+    /* padding: 25px; */
+}
+.testmonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block:5rem ;
+    color: black;
+}
+span{
+    color: red;
+}
+#hello2{
+    color: black;
+}
+#hello3{
+    color: black;
+}
+.person-info{
+    display: flex;
+    flex-direction: row;
+    width:40vw;
+    flex-wrap: wrap;
+}
+.box-person{
+    display: flex;
+    flex-direction: column;
+    width:33% ;
+    padding:30px ;
+    box-shadow:3px  3px 5px  5px rgba(247, 245, 245, 0.808) ;
+     border-radius: 10px;
+}
+.box-person img{
+    width: 100%;
+    height: 100%;
+}
+.box-person h1{
+   font-size: 1.2rem;
+}
+.mapandform{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* width:100%; */
+    margin-block: 4rem;
+}
+.form2{
+    background:linear-gradient(rgba(2,2,2,0.5),rgba(2,2,2,0.5)),url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg) center/cover no-repeat;
+    width: 100%;
+    /* background-color: black; */
+    top: 0;
+    height: 650px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+}
+.google-map{
+    width: 100%;
+    height: 650px;
+}
+iframe{width: 100%;
+height: 100%;}
+.froms{
+   display: flex;
+   flex-direction: column;
+   width: 85%;
+   height:70% ;
+   background-color: rgb(80, 77, 77);
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   border-radius: 10px;
+}
+
+.input1{
+   width:100%;
+   height:10px;
+   display: flex;
+   margin-bottom: 7rem;
+   gap: 1rem;
+   flex-direction: column;
+}
+.button2{
+    margin-top: 2rem;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+
+
+
+@media(max-width:768px){
+    .menu ul{
+        display:none ;
+    }
+   .menu button{
+    display:none;
+   }
+   .mobile-menu{
+    display: flex;
+    background-color:white;
+    text-align: center;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    transform: translateX(0%);
+    transition:transform 350ms ease-in-out ;
+    height:380px;
+    inset: 0 0 0 0;
+    margin-top: 15%;
+   }
+   .mobile-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem ;
+    padding: 10px 15px;
+    margin-inline: auto;
+   }
+   .hamburger{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:5% ;
+    right: 5%;
+    font-size:2rem ;
+   }
+   i{
+    z-index: 11111;
+   }
+   .mobile-menu[data-visible="false"]
+   {transform: translateX(100%);}
+   .hamburger i[data-visible="true"]
+   {display: block;}
+   .hamburger i[data-visible="false"]
+        {display: none;}
+        
+    header{
+        background-color: rgb(223, 223, 219);
+    }
+    .hero{
+        padding: 15px;
+    }
+
+    #hero1{
+        font-size:1.5rem ;
+    }
+    #hero2{
+        font-size:5rem;
+    }
+    video{
+        height: 100vh;
+    }
+.info-gym{grid-template-columns: 1fr;
+width: 100%;}
+.info-gym img{width:100%;}
+.gymi p{
+font-size:1rem ;
+}
+.gymi h1{
+font-size: 1rem;
+}
+.gym-learning{
+    height:60vh ;
+    padding:10px ;
+}
+.btn{
+font-size: 1.5rem;
+padding: 10px 10px;}
+.info-classes{
+width: 100%;
+padding: 15px;
+}
+
+
+.training-classes{
+    width: 100%;
+}
+.first-training img{
+    width:100%;
+}
+    .timetable{
+   height: 120vh;
+   
+    }
+    .box-person{
+        width: 100%;
+    }
+.person-info{
+    width:100vw;
+}
+.mapandform{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+}
+  
+   
+}
